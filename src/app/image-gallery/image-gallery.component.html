@@ -1,0 +1,6 @@
+<div class="gallery-container">
+  <div *ngFor="let img of listImage" [style.flex-basis.%]="itemWidth"
+       [style.max-width.%]="itemWidth" class="gallery-item">
+    <app-image-card [src]="img"></app-image-card>
+  </div>
+</div>
